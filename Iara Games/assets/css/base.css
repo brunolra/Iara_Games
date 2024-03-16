@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Paleta de Cores */
+:root {
+    --brand-color: #DEB841;
+    --darkest-color: #37323E;
+    --dark-color: #6D6A75;
+    --mid-color: #A8A5B1;
+    --light-color: #DAD5E3;
+    --lightest-color: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+                        "header header"
+                        "main aside1"
+                        "main aside2"
+                        "footer footer";
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-left: 2rem;
+    /* color: var(--lightest-color); */
+    color: var(--brand-color) ;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 3rem 0 2rem 0;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    /* margin: 3rem 0 1rem 2rem; */
+    padding: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 20px;
+    color: var(--darkest-color);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    grid-area: header;
+    /* border: 1px solid #000000; */
+}
+
+.main {
+    grid-area: main;
+    /* border: 1px solid #000000; */
+}
+
+.aside1 {
+    grid-area: aside1;
+    border-top: 1rem solid var(--lightest-color);
+    border-bottom: 1rem solid var(--lightest-color);
+}
+
+.aside2 {
+    grid-area: aside2;
+    border-bottom: 1rem solid var(--lightest-color);
+}
+
+.footer {
+    grid-area: footer;
+    /* border: 1px solid #000000; */
+    padding: 1rem;
+}
